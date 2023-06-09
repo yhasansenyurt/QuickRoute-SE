@@ -1,0 +1,45 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<body>
+    
+
+<nav>
+    <h1>Quick Route</h1>
+    <div class="onglets">
+      <p routerLink="/home-page" class="link">Home</p>
+      <p routerLink="/customer-page" class="link">Customer</p>
+      <p routerLink="/register-page" class="link">Register</p>
+      <p routerLink="/login-page" class="link">Login</p>
+      <form>
+        <input type="search" placeholder="Search">
+      </form>
+      <p routerLink="/cart-page" class="link">Cart</p>
+
+      <p><i class="far fa-heart"></i></p>
+      <p><i class="fas fa-shopping-cart"></i></p>
+    </div>
+  </nav>
+
+<div class="testbox">
+  <h1 class="reg">Login</h1>
+
+  <form [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+  <hr>
+  <div class="accounttype">
+    <input formControlName="accountType" type="radio" value="couirer" id="radioOne" name="accountType" checked/>
+    <label for="radioOne" class="radio">Couirer</label>
+
+    <input formControlName="accountType" type="radio" value="customer" id="radioTwo" name="accountType" />
+    <label for="radioTwo" class="radio">Customer</label>
+  </div>
+  <hr>
+  <label id="icon" for="name"><i class="icon-envelope "></i></label>
+  <input formControlName="email" type="text" name="name" id="email" placeholder="Email" required/>
+
+  <label id="icon" for="name"><i class="icon-shield"></i></label>
+  <input formControlName="password" type="password" name="password" id="name" placeholder="Password" required/>
+
+  <button class="button">Login</button>
+</form>
+</div>
+</body>

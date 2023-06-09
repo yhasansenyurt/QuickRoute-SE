@@ -1,0 +1,54 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<body>
+    
+
+<nav>
+    <h1>Quick Route</h1>
+    <div class="onglets">
+      <p routerLink="/home-page" class="link">Home</p>
+      <p routerLink="/customer-page" class="link">Customer</p>
+      <p routerLink="/register-page" class="link">Register</p>
+      <p routerLink="/login-page" class="link">Login</p>
+      <form>
+        <input type="search" placeholder="Search">
+      </form>
+      <p routerLink="/cart-page" class="link">Cart</p>
+
+      <p><i class="far fa-heart"></i></p>
+      <p><i class="fas fa-shopping-cart"></i></p>
+    </div>
+  </nav>
+
+<div class="testbox">
+  <h1 class="reg">Registration</h1>
+
+  <form action="/" #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+      <hr>
+    <div class="accounttype">
+
+      <input name="radioOne" id="radioOne" ngModel type="radio" value="1" id="radioOne" name="isCourier" checked/>
+      <label for="radioOne" class="radio" chec>Couirer</label>
+
+      <input  name="radioTwo" id="radioTwo" ngModel type="radio" value="0" id="radioTwo" name="isCourier" />
+      <label for="radioTwo" class="radio">Customer</label>
+    </div>
+  <hr>
+  <label id="icon" for="email"><i class="icon-envelope "></i></label>
+  <input ngModel type="text" name="email" id="email" placeholder="Email" required/>
+
+  <label id="icon" for="firstName"><i class="icon-user"></i></label>
+  <input ngModel type="text" name="firstName" id="firstName" placeholder="Name" required/>
+
+    <label id="icon" for="lastName"><i class="icon-user"></i></label>
+  <input ngModel type="text" name="lastName" id="lastName" placeholder="Surname" required/>
+
+  <label id="icon" for="phoneNumber"><i class="icon-mobile-phone "></i></label>
+  <input ngModel type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required/>
+
+  <label id="icon" for="password"><i class="icon-shield"></i></label>
+  <input ngModel type="password" name="password" id="password" placeholder="Password" required/>
+   <button class="button">Register</button>
+  </form>
+</div>
+</body>

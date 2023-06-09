@@ -1,0 +1,14 @@
+<igx-list style="z-index: 99;">
+  <igx-list-item [isHeader]="true">
+    ACTIVE ORDERS IN YOUR AREA
+  </igx-list-item>
+  <igx-list-item *ngFor="let contact of contacts" igxRipple igxRippleTarget=".igx-list__item-content">
+    <span igxListLineTitle>{{ contact.name }}</span>
+    <div class="button-sample">
+        <button (click)="orderTrack()"   igxButton="raised" igxButtonColor="white" igxButtonBackground="#72da67" igxRipple="white">GET ORDER</button>
+    </div>
+    <span igxListLineSubTitle>{{contact.phone}}</span>
+  </igx-list-item>
+</igx-list>
+<app-delivery-map></app-delivery-map>
+

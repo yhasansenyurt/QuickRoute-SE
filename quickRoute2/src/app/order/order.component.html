@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="title">
+      <h2>Product Order Form</h2>
+  </div>
+<div  class="d-flex">
+
+  <form style="z-index: 100;" (ngSubmit)="getPackagesFormData()">
+  <label>
+    Height (cm):
+    <input [(ngModel)]="height" type="number" name="height" required>
+  </label>
+  <label>
+    Weight (kg):
+    <input [(ngModel)]="weight" type="number" name="weight" required>
+  </label>
+  <div>
+    <input [(ngModel)]="isBreakable" type="checkbox" name="isBreakable">
+    Is Breakable
+  </div>
+
+    <!-- <form style="z-index: 100;" (ngSubmit)="getPackagesFormData()">
+        <igx-input-group >
+          <label igxLabel for="fullName">Height</label>
+            <input igxInput name="fullName" type="number" />
+
+            <label igxLabel for="fullName">width</label>
+            <input igxInput name="fullName" type="number" />
+            <igx-checkbox [checked]="true">
+    Simple checkbox
+</igx-checkbox>
+        </igx-input-group> -->
+
+
+  <button (click)="completeOrder()"  type="submit" >Place Order</button>
+
+  
+  
+    <h1 style="text-align: center; color: #428A7D;
+  font-size: 25px;
+  font-weight: bold;">Available Couirers In Your Area</h1>
+    </form>
+ <div>
+     
+    <app-map-container></app-map-container>
+    
+ </div>
+    
+  
+  
+  <div class="Yorder">
+    <table>
+      <tr>
+        <th colspan="2">Your order</th>
+      </tr>
+      <tr>
+        <td>Product Name x 2(Qty)</td>
+        <td>₺88.00</td>
+      </tr>
+      <tr>
+        <td>Subtotal</td>
+        <td>₺88.00</td>
+      </tr>
+      <tr>
+        <td>Shipping</td>
+        <td>Free shipping</td>
+      </tr>
+    </table><br>
+    <div>
+    
+      <input type="radio" name="dbt" value="dbt" > Direct Bank Transfer
+    </div>
+    <p>
+        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+    </p>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Cash on Delivery
+    </div>
+    <div>
+      <input type="radio" name="dbt" value="cd"> Paypal <span>
+      <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+      </span>
+    </div>
+    
+  </div>
+  
+ </div>
+ 
+</div>
+

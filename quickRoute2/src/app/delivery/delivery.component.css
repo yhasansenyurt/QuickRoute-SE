@@ -1,0 +1,30 @@
+app-map-container {
+  z-index: -1;
+}
+
+
+
+/* .map-container {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 50px;
+}
+
+.map-frame {
+  height: 75%;
+  width: 55%;
+
+}
+
+#map {
+  border: 2px solid black;
+  height: 100%;
+  margin-top: 40%;
+  margin-left: 15%;
+  
+  
+  
+} */

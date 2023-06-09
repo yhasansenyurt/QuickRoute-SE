@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Quick Route</title>
+  <link rel="stylessheet" href="styles.css">
+  <link rel="stylessheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav>
+    <h1>Quick Route</h1>
+    <div class="onglets">
+      <p routerLink="/home-page" class="link">Home</p>
+      <p routerLink="/customer-page" class="link">Customer</p>
+      <p routerLink="/register-page" class="link">Register</p>
+      <p routerLink="/login-page" class="link">Login</p>
+
+      <form>
+        <input type="search" placeholder="Search">
+      </form>
+      <p routerLink="/cart-page" class="link">Cart</p>
+
+      <p><i class="far fa-heart"></i></p>
+      <p><i class="fas fa-shopping-cart"></i></p>
+    </div>
+  </nav>
+
+   <header>
+     <h1>Quick Route Delivering Your Needs at Lightning Speed </h1>
+     <!-- <button>Explore <i class="fas fa-paper-plane"></i></button>-->
+   </header>
+
+  <section class="main">
+    
+    <!-- Toutes les cartes -->
+    
+    <div class="cards">
+      
+      <div class="card">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/201222103421-healthyfactor-meals.jpg?q=w_1700,h_956,x_0,y_0,c_fill">
+        <div class="card-header">
+          <h4 class="title">Food Order</h4>
+          <h4 class="price">9$</h4>
+        </div>
+        <div class="card-body">
+          <p>Delivery from the restaurant you want<br> with the most convenient courier</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://istanbul-property-management.com/img/grocery.jpg">
+        <div class="card-header">
+          <h4 class="title">Bazaar Order</h4>
+          <h4 class="price">13$</h4>
+        </div>
+        <div class="card-body">
+          <p>Deliver your Sunday shopping with the most<br> suitable courier without even going out.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://www.habernediyor.com/images/upload/image_444.png">
+        <div class="card-header">
+          <h4 class="title">Grocery Shopping</h4>
+          <h4 class="price">9$</h4>
+        </div>
+        <div class="card-body">
+          <p>The product you want, at your door with<br> your courier</p>
+        </div>
+      </div>
+      
+     </div>
+
+    <!-- <div class="video">
+      
+      <iframe src="https://www.youtube.com/embed/2COSkxxOtXY" allowfullscreen></iframe>
+    </div> -->
+    
+  </section>
+
+  <footer>
+    <p>&copy; Conctact With Us - info@quickroute.com</p>
+    <div class="social-media">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+      <p><i class="fab fa-linkedin-in"></i></p>
+    </div>
+  </footer>
+  <!-- Fin du pied de page -->
+</body>
+
+<router-outlet></router-outlet>
+
+
